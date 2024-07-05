@@ -1,0 +1,15 @@
+syms t1;
+syms t2;
+syms t3;
+syms t4;
+syms d1;
+syms a1;
+syms a2;
+syms a3;
+syms a4;
+A01 = [cos(t1) 0 sin(t1) a1*cos(t1); sin(t1) 0 -cos(t1) a1*sin(t1); 0 1 0 d1; 0 0 0 1];
+A12 = [cos(t2) -sin(t2) 0 a2*cos(t2); sin(t2) cos(t2) 0 a2*sin(t2); 0 0 1 0; 0 0 0 1];
+A23 = [cos(t3) -sin(t3) 0 a3*cos(t3); sin(t3) cos(t3) 0 a3*sin(t3); 0 0 1 0; 0 0 0 1];
+A34 = [cos(t4) -sin(t4) 0 a4*cos(t4); sin(t4) cos(t4) 0 a4*sin(t4); 0 0 1 0; 0 0 0 1];
+T = A01*A12*A23*A34;
+T04 = simplify(T);
