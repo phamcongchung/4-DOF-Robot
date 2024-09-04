@@ -1,4 +1,4 @@
- import RPi.GPIO as GPIO
+import RPi.GPIO as GPIO
 from time import sleep
 import pyrebase
 import pigpio
@@ -26,11 +26,11 @@ pwm.set_PWM_frequency(servo5, 50)
 
 #API kết nối với firebase
 config = {
-    "apiKey": "REMOVED",
-    "authDomain": "REMOVED",
-    "databaseURL": "REMOVED",
-    "projectId": "REMOVED",
-    "storageBucket": "REMOVED.appspot.com"} 
+    "apiKey": "Your API key",
+    "authDomain": "Your domain",
+    "databaseURL": "Your URL",
+    "projectId": "Your project id",
+    "storageBucket": "Your storage bucket"} 
 
 #Hàm kết nối với firebase
 firebase = pyrebase.initialize_app(config)
